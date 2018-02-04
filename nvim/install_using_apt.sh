@@ -1,5 +1,5 @@
 
-# chmod -x nameOfFile.sh
+# chmod +x nameOfFile.sh
 sudo apt-get install software-properties-common # nos permite agregar repositorios
 
 # instalamos neovim
