@@ -12,7 +12,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # creamos un directorio
-mkdir ~/.config/nvim/init.vim
+mkdir ~/.config/nvim
 
 # copiamos los archivos con la config. prestablecida
 cp *.vim ~/.config/nvim/
