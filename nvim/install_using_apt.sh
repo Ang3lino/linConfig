@@ -20,6 +20,7 @@ cp *.vim ~/.config/nvim/
 # descargamos los modulos de python
 sudo apt install pip3
 sudo apt install pip
+#sudo apt-get -y install python3-pip
 
 # usamos los modulos para instalar neovim
 pip install neovim
