@@ -12,3 +12,11 @@ sudo chroot /mnt
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
+# How to fix this “minimal BASH like line editing is supported” Grub error in Ubuntu based Linux
+# https://itsfoss.com/fix-minimal-bash-line-editing-supported-grub-error-linux/
+
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install boot-repair
+
+boot-repair &
