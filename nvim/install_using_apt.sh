@@ -1,8 +1,9 @@
 
 # chmod +x nameOfFile.sh
-sudo apt-get install software-properties-common # nos permite agregar repositorios
+# nos permite agregar repositorios
+sudo apt-get install software-properties-common 
 
-# instalamos neovim
+# instalamos la version mas actual de neovim 
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt-get install neovim
