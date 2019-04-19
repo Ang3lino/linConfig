@@ -5,7 +5,7 @@ set shiftwidth=4
 set ruler
 set wildmenu
 set wildmode=list:longest,full
-"set background=dark
+set background=dark
 set relativenumber
 
 syntax enable
