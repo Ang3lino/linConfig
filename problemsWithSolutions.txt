@@ -1,0 +1,9 @@
+
+os: "Ubuntu 18.04.2",
+info: "Installed approximately a week after released",
+problem: "No response when trying to add a not signed ppa repository in terminal",
+solution: "Add it by using software and update GUI from ubuntu in other software tab, then update from terminal with 
+    $ sudo apt-get update --allow-unauthenticated
+    The extra option was necessary for not signed packages"
+    
+    
