@@ -1,4 +1,9 @@
-# https://www.youtube.com/watch?v=0o0tSaVQfV4
+#
+# https://dev.mysql.com/doc/mysql-apt-repo-quick-guide/en/
+# https://dev.mysql.com/downloads/repo/apt/
+
+# ==============================================================================================
+# https://www.youtube.com/watch?v=0o0tSaVQfV4   
 # info de: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-14-04
 
 sudo apt update
