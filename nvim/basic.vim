@@ -5,7 +5,7 @@ set shiftwidth=4
 set ruler
 set wildmenu
 set wildmode=list:longest,full
-set background=dark
+"set background=dark
 set relativenumber
 
 syntax enable
@@ -13,7 +13,7 @@ syntax enable
 "colorscheme Tomorrow-Night
 "colorscheme Benokai
 "colorscheme Revolution
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme atom-dark-256
 "colorscheme xoria256
 "colorscheme benlight
@@ -66,5 +66,3 @@ nnoremap <leader><leader> <c-^>
     \   exe "normal g`\"" |
 \ endif
 
-" Copy to the clipboard
-set clipboard+=unnamedplus

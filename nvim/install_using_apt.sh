@@ -1,12 +1,17 @@
+#!/bin/bash
 
-# chmod +x nameOfFile.sh
-# nos permite agregar repositorios
-sudo apt-get install software-properties-common 
+# chmod +x script.sh to allow system to eXecute the script
 
-# instalamos la version mas actual de neovim 
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt update
-sudo apt-get install neovim
+if ! dpkg -s software-properties-common ; then
+	sudo apt-get install software-properties-common # nos permite agregar repositorios
+fi
+
+# instalamos neovim
+if ! dpkg -s neovim ; then
+    sudo add-apt-repository ppa:neovim-ppa/stable -y
+    sudo apt update
+    sudo apt-get install neovim -y
+fi
 
 # vim-plug para unix
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
@@ -19,11 +24,19 @@ mkdir ~/.config/nvim
 cp *.vim ~/.config/nvim/
 
 # descargamos los modulos de python
-#sudo apt install pip3
-#sudo apt install pip
-sudo apt-get -y install python3-pip
+if ! [ pip3 ] ; then
+    sudo apt install pip3 -y
+    sudo apt install pip -y
+fi
+#sudo apt-get -y install python3-pip
 
 # usamos los modulos para instalar neovim
-#pip install neovim
-pip3 install neovim
-# ahora solo resta ejecutar el comando PlugInstall
+if ! [ pip list | grep neovim ]; then 
+	pip install neovim
+fi 
+
+if ! [ pip3 list | grep neovim ]; then 
+	pip3 install neovim
+fi 
+
+#nvim -c PlugInstall
