@@ -1,5 +1,0 @@
-
-DE: KDE,
-src: https://www.fossmint.com/install-kde-plasma-on-ubuntu/
-instructions: sudo apt-get install plasma-desktop
-testedOn: ubuntu-budgie-18.04.2 LTS
