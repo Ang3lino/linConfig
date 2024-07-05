@@ -1,0 +1,23 @@
+
+[
+    {
+        os: "Ubuntu 18.04.2",
+        de: "Gnome",
+        info: "Installed approximately a week after released",
+        problem: "No response when trying to add a not signed ppa repository in terminal",
+        solution: "Add it by using software and update GUI from ubuntu in other software tab, then update from terminal with 
+            $ sudo apt-get update --allow-unauthenticated
+            The extra option was necessary for not signed packages"
+    },
+    {
+        os: "Linux Lite 4.4",
+        de: "xfce", 
+        info: "Installed using legacy",
+        problem: "No brightness allowed without fn keys"
+        solution: "Install brightness-controller  
+            sudo add-apt-repository ppa:apandada1/brightness-controller
+            sudo apt-get update
+            sudo apt-get install brightness-controller
+        or add power manager plugin item by doing right clic on the bar below. "
+    }
+]
