@@ -8,6 +8,7 @@ brew install MonitorControl
 brew install iterm2
 brew install font-hack-nerd-font
 brew install --cask betterdisplay
+brew install --cask rectangle
 
 # dev
 brew install python go java 
