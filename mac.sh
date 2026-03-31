@@ -30,3 +30,6 @@ brew install terraform
 curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
 sudo installer -pkg AWSCLIV2.pkg -target /
 
+# https://www.youtube.com/watch?v=9IvHTZOtytQ
+defaults read -g com.apple.mouse.scaling  # check current speed
+defaults write -g com.apple.mouse.scaling 9.0  # reset mac to apply changes
